@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(55, 55, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+form {
+    display: flex;
+    gap: 1rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div label {
+    color: lightgray;
+    padding-left: 1rem;
+}
+
+form div input {
+    border: none;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 24px;
+    transition: all .3s ease;
+}
+
+form div input:focus {
+    outline: none;
+    box-shadow: 0 0 8px 2px greenyellow;
+    transform: scaleX(1.1) translateY(4px);
+}
+
+form div input:hover {
+    box-shadow: 0 0 8px 2px greenyellow;
+}
+
+
+.results {
+    color: white;
+    font-weight: 700;
+    position: relative;
+    height: 3rem;
+}
+
+
+.board {
+    background: rgb(97, 138, 175);
+    width: 30rem;
+    height: 30rem;
+    border-radius: 5rem;
+    
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem;
+}
+
+.btn {
+    background:none;
+    border-top: none;
+    border-left: none;
+    font-size: 5rem;
+    transition: all .2s ease;
+    width: 10rem;
+    height: 10rem;
+    color: white;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    box-shadow: 0 0 8px 2px greenyellow;
+    color: black;
+}
+
+.top-right, .middle-right, .bottom-right {
+    border-right: none;
+}
+
+.bottom-left, .bottom-middle, .bottom-right {
+    border-bottom: none;
+}
+
+.top-left {
+    border-top-left-radius: 5rem;
+}
+.top-right {
+    border-top-right-radius: 5rem;
+}
+.bottom-right {
+    border-bottom-right-radius: 5rem;
+}
+
+.bottom-left {
+    border-bottom-left-radius: 5rem;
+}
+
+.reset-btn {
+    background: rgb(97, 138, 175);
+    border: none;
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    transition: all .2s ease;
+    color: white;
+}
+
+.reset-btn:hover {
+    background: greenyellow;
+    cursor: pointer;
+    box-shadow: 0 0 8px 2px greenyellow;
+    color: black;
+}

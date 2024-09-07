@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <form action="">
+        <div>
+            <label for="player-1">Player 1 (X):</label>
+            <input type="text" class="player-1">
+        </div>
+        <div class="">
+            <label for="">Player 2 (O):</label>
+            <input type="text" class="player-2">
+        </div>
+    </form>
+
+    <h1 class="results"></h1>
+    <div class="board">
+        <button class="top-left btn" onclick="playPosition(0)"></button>
+        <button class="top-middle btn" onclick="playPosition(1)"></button>
+        <button class="top-right btn" onclick="playPosition(2)"></button>
+        <button class="middle-left btn" onclick="playPosition(3)"></button>
+        <button class="middle btn" onclick="playPosition(4)"></button>
+        <button class="middle-right btn" onclick="playPosition(5)"></button>
+        <button class="bottom-left btn" onclick="playPosition(6)"></button>
+        <button class="bottom-middle btn" onclick="playPosition(7)"></button>
+        <button class="bottom-right btn" onclick="playPosition(8)"></button>
+    </div>
+
+    <button class="reset-btn" onclick="resetBoard()">Reset</button>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
